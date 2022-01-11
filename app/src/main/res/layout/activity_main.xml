@@ -7,12 +7,77 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/loginAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="@string/screen_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editLoginEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:hintTextColor="#757575"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginAppName"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editLoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="1dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:hintTextColor="#757575"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editLoginEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editLoginEmailAddress"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/login_button"
+        app:layout_constraintStart_toStartOf="@+id/forgotPassText"
+        app:layout_constraintTop_toBottomOf="@+id/editLoginPassword" />
+
+    <TextView
+        android:id="@+id/forgotPassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/forgot_password_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+    <TextView
+        android:id="@+id/forgotPassTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/forgot_password_2"
+        app:layout_constraintStart_toStartOf="@+id/forgotPassText"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassText" />
+  
 </androidx.constraintlayout.widget.ConstraintLayout>
