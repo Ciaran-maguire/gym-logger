@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569196064911",
+    "project_id": "gym-logger-40904",
+    "storage_bucket": "gym-logger-40904.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569196064911:android:b53532c96e99403f6540fa",
+        "android_client_info": {
+          "package_name": "com.example.gym_logger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569196064911-8tuna555rivdc474moenj31u8ri6o4fr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOoan7OVcUGjZ6vCd6qitdGzSaNWRVXDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569196064911-8tuna555rivdc474moenj31u8ri6o4fr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
